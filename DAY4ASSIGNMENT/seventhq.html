@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q7</title>
+</head>
+<body>
+    <h1>press f12 to see the result</h1>
+    <script>
+        let m=+prompt("enter m:");
+        for(let j=2;j<=m;j++)
+        {
+            let x=0;
+        for(let i=2;i<=j/2;i++)
+        {
+            if(j%i==0)
+            {
+                x=x+1;
+            }
+        }
+        if(x==0)
+        {
+            console.log(j);
+        }
+       }
+
+    </script>
+</body>
+</html>
