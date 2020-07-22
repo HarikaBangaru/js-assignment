@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1</title>
+</head>
+<body>
+    <p>press F12 to see the output</p>
+    <script>
+        let arr = [];
+        let x;
+        n=+prompt("enter num:");
+        while(n!=""){
+           arr.push(n);
+           n=+prompt("enter num:");        
+        }
+        let odd = arr.filter(el=>el%2!=0);
+        let oddcubes = odd.map(el=>el**3);
+        console.log("odd numbers:",odd);
+        console.log("oddcubes:",oddcubes);
+        
+    </script>
+</body>
+</html>
