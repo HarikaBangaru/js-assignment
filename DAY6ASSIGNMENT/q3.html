@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+    <style>
+        #t{
+        padding-left:50px; 
+        height:80px;
+        width:1000px;
+        font-size:70px;
+        text-align:center;
+        margin-left:50px;
+     
+        }
+        .dc{
+            background-color: black;
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body id="d">
+    <h1 id="t"> </h1>
+    <h3 id="time" style="text-align: center;"></h3>
+    
+    <script>
+        document.getElementById("t").innerHTML="Welcome"+" "+prompt("enter your name");
+        const ctime = document.getElementById('time');
+        function clock(){
+              let date = new Date();
+              let time = date.toLocaleTimeString();
+              ctime.innerText="Time"+"\n"+ time;
+        }
+        setInterval(clock,1000);
+        let dm=document.getElementById("d")
+        dm.classList.toggle("dc");
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
